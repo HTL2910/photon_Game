@@ -10,7 +10,19 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-*.log
+*.log ; dành cho photon trong unity thì nên thêm gì
+# --- Photon Engine ---
+# Nếu bạn không muốn commit AppID và Config
+Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
+Assets/Photon/PhotonChat/Resources/PhotonChatSettings.asset
+
+# Nếu dùng Fusion có file tương tự
+Assets/Photon/Fusion/Resources/FusionRuntimeSettings.asset
+
+# Log file từ Photon (nếu enable log to file)
+*.photonlog
+*.photonlog.meta
+
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
